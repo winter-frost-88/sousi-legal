@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; img-src 'self' data:; form-action 'self' https://dvqsbrbshnxcxynswjrh.supabase.co; base-uri 'none'; frame-ancestors 'none'">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Please try again later. for the Sousi recipe and cooking app.">
+  <title>Please try again later. · Sousi</title>
+  <style>
+    :root { color-scheme: light; --ink:#25322b; --muted:#66736b; --paper:#fbfaf4; --surface:#ffffff; --line:#dfe5dc; --sage:#67806d; --sage-dark:#405c49; --peach:#f1d8c8; --error:#8b2f2f; --success:#32633e; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    nav, main, footer { width:min(960px, calc(100% - 40px)); margin-inline:auto; }
+    nav { min-height:76px; display:flex; align-items:center; justify-content:space-between; gap:24px; border-bottom:1px solid var(--line); }
+    nav a { color:var(--ink); text-decoration:none; }
+    .brand { display:flex; align-items:center; gap:10px; font-weight:750; letter-spacing:-.02em; }
+    .brand span { display:grid; place-items:center; width:34px; height:34px; border-radius:12px; background:var(--sage-dark); color:white; font-family:Georgia,serif; font-size:20px; }
+    .nav-links { display:flex; gap:8px; }
+    .nav-links a { padding:7px 10px; border-radius:999px; color:var(--muted); font-size:14px; }
+    .nav-links a[aria-current="page"] { color:var(--sage-dark); background:#e8eee7; font-weight:650; }
+    main { padding:56px 0 64px; }
+    .hero { max-width:760px; padding:0 0 34px; }
+    .eyebrow { display:inline-block; color:var(--sage-dark); background:#e7eee7; border-radius:999px; padding:5px 11px; font-size:13px; font-weight:700; text-transform:uppercase; letter-spacing:.08em; }
+    h1, h2, h3 { line-height:1.18; letter-spacing:-.025em; }
+    h1 { margin:18px 0 12px; font:700 clamp(42px,8vw,68px)/1.03 Georgia,serif; }
+    h2 { margin:0 0 14px; font-size:28px; }
+    h3 { margin:0 0 8px; font-size:18px; }
+    .lede { max-width:700px; margin:0; color:var(--muted); font-size:20px; line-height:1.55; }
+    .updated, .small { color:var(--muted); font-size:14px; }
+    section { padding:32px 0; border-top:1px solid var(--line); }
+    p { margin:0 0 16px; }
+    ul { padding-left:24px; margin:10px 0 18px; }
+    li { margin:7px 0; }
+    a { color:var(--sage-dark); text-underline-offset:3px; }
+    .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; }
+    .card { padding:22px; background:var(--surface); border:1px solid var(--line); border-radius:18px; box-shadow:0 8px 24px rgba(37,50,43,.035); }
+    .card p { margin:0; color:var(--muted); }
+    .support-grid { display:grid; grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr); gap:38px; align-items:start; }
+    form { padding:24px; border-radius:20px; background:var(--surface); border:1px solid var(--line); box-shadow:0 12px 34px rgba(37,50,43,.06); }
+    label { display:block; margin:0 0 6px; font-size:14px; font-weight:700; }
+    input, select, textarea { width:100%; margin:0 0 18px; padding:12px 13px; border:1px solid #bdc8be; border-radius:11px; background:var(--surface); color:var(--ink); font:inherit; }
+    textarea { resize:vertical; min-height:150px; }
+    input:focus, select:focus, textarea:focus { outline:3px solid #cfdccf; border-color:var(--sage-dark); }
+    button { width:100%; border:0; border-radius:12px; padding:14px 18px; background:var(--sage-dark); color:#fff; font:700 16px/1.2 inherit; cursor:pointer; }
+    button:hover { background:#2f4938; }
+    .notice { margin:0 0 26px; padding:16px 18px; border-radius:14px; border:1px solid; }
+    .success { color:var(--success); background:#edf7ef; border-color:#b9d6bf; }
+    .error { color:var(--error); background:#fff0ef; border-color:#e3b8b4; }
+    code { padding:2px 5px; border-radius:5px; background:rgba(0,0,0,.06); }
+    .trap { position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden; }
+    footer { display:flex; justify-content:space-between; gap:16px; padding:24px 0 34px; border-top:1px solid var(--line); color:var(--muted); font-size:13px; }
+    @media (max-width:720px) { nav { align-items:flex-start; padding:18px 0; flex-direction:column; gap:12px; } main { padding-top:38px; } .cards, .support-grid { grid-template-columns:1fr; } .nav-links { width:100%; justify-content:space-between; } .nav-links a { padding-inline:8px; } footer { flex-direction:column; } }
+    @media (prefers-color-scheme:dark) { :root { color-scheme:dark; --ink:#eef3ed; --muted:#aeb9b0; --paper:#172019; --surface:#202b23; --line:#354138; --sage-dark:#b5cfb9; --success:#b9e0bf; --error:#ffc0b9; } .brand span, button { background:#8baa91; color:#122017; } .eyebrow, .nav-links a[aria-current="page"] { background:#293b2d; } input,select,textarea { border-color:#526057; } code { background:rgba(255,255,255,.08); } .success { background:#203526; border-color:#426a4b; } .error { background:#402321; border-color:#74413d; } }
+  </style>
+</head>
+<body>
+  <nav aria-label="Legal and support">
+    <a class="brand" href="https://winter-frost-88.github.io/sousi-legal/privacy" aria-label="Sousi home"><span aria-hidden="true">S</span> Sousi</a>
+    <div class="nav-links">
+      <a href="https://winter-frost-88.github.io/sousi-legal/privacy">Privacy</a>
+      <a href="https://winter-frost-88.github.io/sousi-legal/terms">Terms</a>
+      <a href="https://winter-frost-88.github.io/sousi-legal/support" aria-current="page">Support</a>
+    </div>
+  </nav>
+  <main>
+      <header class="hero">
+        <span class="eyebrow">Support is temporarily unavailable</span>
+        <h1>Please try again later.</h1>
+        <p class="lede">We couldn’t save your request. No message was submitted. Please return later and try again.</p>
+      </header>
+      <section>
+        <p><a href="https://winter-frost-88.github.io/sousi-legal/support/">Return to Sousi Support</a></p>
+      </section>
+    </main>
+  <footer>
+    <span>© 2026 Sousi</span>
+    <span>Made for calmer kitchens.</span>
+  </footer>
+</body>
+</html>
