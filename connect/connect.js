@@ -30,12 +30,12 @@ async function showConnections() {
   const data = await api({ action: "connections" });
   $("connections").hidden = false;
   $("connection-list").replaceChildren();
-  if (!data.connections.length) $("connection-list").textContent = "No active recipe connections.";
+  if (!data.connections.length) $("connection-list").textContent = "No active connections.";
   for (const connection of data.connections) {
     const row = document.createElement("div"); row.className = "connection";
     const text = document.createElement("p"); text.textContent = "Connected " + new Date(connection.created_at).toLocaleDateString() + (connection.last_seen_at ? " · Last used " + new Date(connection.last_seen_at).toLocaleDateString() : " · Not used yet");
     const button = document.createElement("button"); button.className = "secondary"; button.textContent = "Disconnect";
-    button.onclick = () => work(async () => { await api({ action: "revoke", id: connection.id }); await showConnections(); $("status").textContent = "Disconnected. Future recipe access has stopped."; });
+    button.onclick = () => work(async () => { await api({ action: "revoke", id: connection.id }); await showConnections(); $("status").textContent = "Disconnected. Future access has stopped."; });
     row.append(text, button); $("connection-list").append(row);
   }
 }
@@ -54,6 +54,8 @@ $("sign-in").onsubmit = event => {
       const details = await api({ action: "details", requestID });
       $("client").textContent = details.clientName + " is requesting access. You will return to " + details.callbackHost + ".";
       $("account").textContent = "Signed in as " + details.email;
+      $("recipe-permission").hidden = !details.scopes.includes("recipes:read");
+      $("receipt-permission").hidden = !details.scopes.includes("receipts:read");
       $("consent").hidden = false;
     }
     await showConnections();
